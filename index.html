@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>DFZ - Dance Club IIT BHU</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <div class="logo">
+          <a href="#"><img src="logo.png" alt="DFZ logo" /></a>
+        </div>
+        <div class="toggle"></div>
+      </header>
+      <video src="background.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>DFZ</h2>
+        <h3>Dance Club IIT BHU</h3>
+        <p>
+          Popularly known as DFz (Dance Freakz), the doors of the club are open
+          for anyone who is willing to move his body a bit to the rhythm.
+          Focusing on versatility, we perform various dance forms like Hip-Hop,
+          Bollywood, Salsa, Folk Dance, Classical, Freestyle, Contemporary,
+          Krumping, House, and many more. The Dance Club organizes expert and
+          beginner-level workshops for students of the Institute throughout the
+          year.
+        </p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/dfz.iitbhu/"
+            ><i class="fa fa-instagram fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Dance.Iitbhu"
+            ><i class="fa fa-facebook fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/c/DFZIITBHUDanceClub"
+            ><i class="fa fa-youtube fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Hall of Fame</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
